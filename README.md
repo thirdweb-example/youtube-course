@@ -1,23 +1,21 @@
-## Getting Started
+## YouTube Course
 
-Create a project using this example:
+[YouTube Course - Become a blockchain developer in 2023: Full course](https://youtu.be/rc-Q1sQwMsU)
 
-```bash
-npx thirdweb create --template next-typescript-starter
-```
+Create a portfolio app project for thirdweb YouTube course. Learn how to use EVM SDK and interact with your contracts through a frontend application.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Smart Contract
 
-On `pages/_app.tsx`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our [hooks](https://portal.thirdweb.com/react) and
-[UI Components](https://portal.thirdweb.com/ui-components) to work.
+Smart contracts used in this project will consist of thirdweb pre-built contracts and smart contracts built in the smart contract section of the course.
 
-### Deploy to IPFS
+[ERC20](https://thirdweb.com/thirdweb.eth/TokenERC20)
+[ERC721](https://thirdweb.com/thirdweb.eth/DropERC721)
+[ERC1155](https://thirdweb.com/thirdweb.eth/DropERC1155)
+Tip Jar - Smart contract built in the course
+Profile Status - Smart contract built in the course
+[ERC721 Staking](https://thirdweb.com/thirdweb.eth/NFTStake)
 
-Deploy a copy of your application to IPFS using the following command:
-
-```bash
-yarn deploy
-```
+Link to smart contract repo for course: [Repo](https://github.com/thirdweb-example/youtube-course-contracts)
 
 ## Learn More
 
