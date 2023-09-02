@@ -8,12 +8,12 @@ Create a portfolio app project for thirdweb YouTube course. Learn how to use EVM
 
 Smart contracts used in this project will consist of thirdweb pre-built contracts and smart contracts built in the smart contract section of the course.
 
-[ERC20](https://thirdweb.com/thirdweb.eth/TokenERC20)
-[ERC721](https://thirdweb.com/thirdweb.eth/DropERC721)
-[ERC1155](https://thirdweb.com/thirdweb.eth/DropERC1155)
-Tip Jar - Smart contract built in the course
-Profile Status - Smart contract built in the course
-[ERC721 Staking](https://thirdweb.com/thirdweb.eth/NFTStake)
+- [ERC20](https://thirdweb.com/thirdweb.eth/TokenERC20)
+- [ERC721](https://thirdweb.com/thirdweb.eth/DropERC721)
+- [ERC1155](https://thirdweb.com/thirdweb.eth/DropERC1155)
+- Tip Jar - Smart contract built in the course
+- Profile Status - Smart contract built in the course
+- [ERC721 Staking](https://thirdweb.com/thirdweb.eth/NFTStake)
 
 Link to smart contract repo for course: [Repo](https://github.com/thirdweb-example/youtube-course-contracts)
 
