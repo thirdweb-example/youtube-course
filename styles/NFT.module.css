@@ -1,0 +1,86 @@
+.nftGridContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1%;
+    width: 100%;
+}
+
+.nftContainer {
+    width: 30%;
+    margin: 8px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    outline: 1px solid rgba(255, 255, 255, 0.1);
+    transform: translate3d(0px, 0px, 0px);
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    max-height: auto;
+    transition: all 0.25s ease-in-out;
+}
+.stakeNftContainer {
+    width: 100%;
+    margin: 8px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    outline: 1px solid rgba(255, 255, 255, 0.1);
+    transform: translate3d(0px, 0px, 0px);
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    max-height: auto;
+    transition: all 0.25s ease-in-out;
+}
+.nftGrid {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+.nftContainer:hover, .stakeNftContainer:hover {
+    cursor: pointer;
+    transform: translate3d(0px, -4px, 0px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nftInfoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.nftName {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nftTokenId {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.stakeSection {
+    width: 50%;
+    border: #222 1px solid;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    min-height: 400px;
+}
+.stakeHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

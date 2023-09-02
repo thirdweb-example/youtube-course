@@ -143,3 +143,187 @@
 .logo img {
   filter: invert(1);
 }
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 84px;
+  max-width: 1440px;
+}
+.navbarLogo {
+  font-size: small;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbarLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.navbarLinks p {
+  font-size: medium;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.navbarLinks p:hover {
+  color: #a79af9;
+}
+.profilePicture {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+}
+.profilePicture:hover {
+  cursor: pointer;
+}
+.profileMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  top: 84px;
+  right: 100px;
+  width: 200px;
+  height: auto;
+  background-color: #131313;
+  border-radius: 8px;
+  z-index: 1;
+  padding: 1rem;
+}
+.profileMenuAddress {
+  font-size: xx-small;
+  border: #272a2d 1px solid;
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+.profileMenuLink {
+  font-size: medium;
+  margin: 0.5rem 0;
+  color: #fff;
+  text-decoration: none;
+
+  transition: all 0.2s ease-in-out;
+}
+.profileMenuLink:hover {
+  color: #a79af9;
+}
+.divider {
+  width: 100%;
+}
+.navbarSignOutButton {
+  background-color: #131313;
+  border: #272a2d 1px solid;
+  border-radius: 5px;
+  padding: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: x-small;
+  margin: 0.5rem 0;
+}
+
+
+.heroContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 80vh;
+  max-width: 1440px;
+}
+.heroImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.heroImage {
+  text-align: center;
+}
+
+.stakeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.stakeNFTCardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.stakedNFTCard {
+  width: 30%;
+  border: #222 1px solid;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.stakedNFTCard:hover {
+  transform: translateY(-5px);
+}
+
+.stakeSection {
+  width: 50%;
+  border: #222 1px solid;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+}
+.stakeHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.stakeRewardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  border: #222 1px solid;
+  border-radius: 8px;
+  margin: 1rem;
+}
+.stakeRewardInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.stakeClaimableRewardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.claimableRewards {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0.75rem 0;
+}
