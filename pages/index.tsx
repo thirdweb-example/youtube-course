@@ -1,57 +1,56 @@
 import { NextPage } from "next";
 import styles from "../styles/Home.module.css";
-import { MediaRenderer, Web3Button, useActiveClaimCondition, useAddress, useContract, useContractMetadata } from "@thirdweb-dev/react";
-import { ERC721_CONTRACT_ADDRESS } from "../const/addresses";
+import { ERC1155_CONTRACT_ADDRESS, ERC20_CONTRACT_ADDRESS, ERC721_CONTRACT_ADDRESS, PROFILE_STATUS_CONTRACT_ADDRESS, TIP_JAR_CONTRACT_ADDRESS } from "../const/addresses";
+import ContractCard from "../components/contract-card";
 
 const Home: NextPage = () => {
-  const address = useAddress();
-
-  const {
-    contract: ERC721Contract
-  } = useContract(ERC721_CONTRACT_ADDRESS);
-  const {
-    data: ERC721ContractMetadata,
-    isLoading: ERC721ContractMetadataIsLoading
-  } = useContractMetadata(ERC721Contract);
-
-  const {
-    data: ERC721ClaimCondition,
-    isLoading: ERC721ClaimConditionIsLoading
-  } = useActiveClaimCondition(ERC721Contract);
-
   return (
-    <div className={styles.container}>
-      <div className={styles.heroContainer}>
-        <div>
-          <h1>ERC721 NFT</h1>
-          <p>Claim your ERC721 NFT here. You can claim 1 NFT which can be used to earn tokens. Earn enough tokens and claim new NFTs.</p>
-          <p>Cost: {ERC721ClaimCondition?.currencyMetadata.displayValue} {ERC721ClaimCondition?.currencyMetadata.symbol}</p>
-          {address ? (
-            <Web3Button
-              contractAddress={ERC721_CONTRACT_ADDRESS}
-              action={(contract) => contract.erc721.claim(1)}
-              onSuccess={() => alert("Claimed NFT")}
-            >Claim NFT</Web3Button>
-          ) : (
-            <p>Connect to claim</p>
-          )}
+    <main className={styles.main}>
+      <div className={styles.container}>
+        <div className={styles.header}>
+          <h1 className={styles.title}>
+            My {" "}
+            <span className={styles.gradientText0}>
+              Contracts
+            </span>
+          </h1>
+
+          <p className={styles.description}>Select a contract to interact with.</p>
         </div>
-        <div className={styles.heroImageContainer}>
-          {!ERC721ContractMetadataIsLoading ? (
-            <div className={styles.heroImage}>
-              <MediaRenderer
-                src={ERC721ContractMetadata?.image}
-                height="80%"
-                width="80%"
-              />
-              <p>{ERC721ContractMetadata?.name}</p>
-            </div>
-          ) : (
-            <p>Loading...</p>
-          )}
+        <div className={styles.grid}>
+          <ContractCard
+            href="/project/erc20"
+            contractAddress={ERC20_CONTRACT_ADDRESS}
+            title="ERC-20"
+            description="A standard interface for non-fungible tokens."
+          />
+          <ContractCard
+            href="/project/erc721"
+            contractAddress={ERC721_CONTRACT_ADDRESS}
+            title="ERC-721"
+            description="A standard interface for non-fungible tokens."
+          />
+          <ContractCard
+            href="/project/erc1155"
+            contractAddress={ERC1155_CONTRACT_ADDRESS}
+            title="ERC-1155"
+            description="A standard interface for non-fungible tokens."
+          />
+          <ContractCard
+            href="/project/tipJar"
+            contractAddress={TIP_JAR_CONTRACT_ADDRESS}
+            title="Tip Jar"
+            description="A standard interface for non-fungible tokens."
+          />
+          <ContractCard
+            href="/project/profileStatus"
+            contractAddress={PROFILE_STATUS_CONTRACT_ADDRESS}
+            title="Profile Status"
+            description="A standard interface for non-fungible tokens."
+          />
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
